@@ -14,4 +14,9 @@ public class CarOffCommand implements Command {
     public void execute() {
         car.stopEngine();
     }
+
+    @Override
+    public void undo() {
+        car.startEngine();
+    }
 }

@@ -14,4 +14,9 @@ public class CarOnCommand implements Command {
     public void execute() {
         car.startEngine();
     }
+
+    @Override
+    public void undo() {
+        car.stopEngine();
+    }
 }

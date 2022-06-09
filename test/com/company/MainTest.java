@@ -34,6 +34,12 @@ class MainTest {
         invoker.addCommand(laptopOff);
 
         invoker.actionAll();
+
+        System.out.println("UNDOS:");
+
+        invoker.undo();
+
+        invoker.undo(2);
     }
 
 }

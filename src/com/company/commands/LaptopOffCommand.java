@@ -14,4 +14,9 @@ public class LaptopOffCommand implements Command {
     public void execute() {
         laptop.shutdown();
     }
+
+    @Override
+    public void undo() {
+        laptop.powerOn();
+    }
 }
